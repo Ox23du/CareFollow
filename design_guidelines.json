@@ -1,0 +1,193 @@
+{
+  "identity": {
+    "persona": "E1",
+    "mission": "Create a medical SaaS that feels like a wellness retreat—clean, reassuring, and hyper-efficient. Break the 'sterile hospital' trope with warm organic touches while maintaining clinical precision.",
+    "principles": [
+      "Fusion: Swiss Precision (Layouts) + Organic Warmth (Colors/Radius)",
+      "Emotion: Calmness for Patients, Clarity for Doctors",
+      "Content: Data is the hero, but it must be digestible",
+      "Negative Space: Critical for reducing cognitive load in medical contexts"
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Manrope",
+        "weights": ["600", "700", "800"],
+        "usage": "All section headers, modal titles, and hero text. Use tight tracking (-0.02em)."
+      },
+      "body": {
+        "family": "Inter",
+        "weights": ["400", "500"],
+        "usage": "General text, inputs, data tables. Standard tracking."
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "weights": ["400"],
+        "usage": "Medical codes (ICD-10), API keys, or technical data."
+      }
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body-lg": "text-lg leading-relaxed",
+      "body-base": "text-base leading-relaxed text-slate-600",
+      "caption": "text-sm text-slate-500 font-medium uppercase tracking-wider"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Clinical Teal",
+        "main": "#0D9488",
+        "light": "#99F6E4",
+        "dark": "#115E59",
+        "usage": "Primary buttons, active states, key brand elements."
+      },
+      "secondary": {
+        "name": "Slate Navy",
+        "main": "#0F172A",
+        "usage": "Headings, strong borders, secondary actions."
+      },
+      "accent": {
+        "name": "Vitality Coral",
+        "main": "#F97316",
+        "light": "#FFEDD5",
+        "usage": "Notification dots, 'Urgent' tags, call-to-action highlights."
+      },
+      "background": {
+        "page": "#F8FAFC",
+        "surface": "#FFFFFF",
+        "subtle": "#F1F5F9"
+      },
+      "status": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444",
+        "info": "#3B82F6"
+      }
+    },
+    "gradients": {
+      "subtle_glow": "bg-gradient-to-br from-teal-50 to-slate-50",
+      "active_state": "bg-gradient-to-r from-teal-600 to-teal-500"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "section_gap": "gap-8 md:gap-12",
+      "item_gap": "gap-4"
+    },
+    "grids": {
+      "dashboard_staff": {
+        "name": "Control Room Grid",
+        "structure": "grid grid-cols-1 md:grid-cols-12 gap-6",
+        "rules": [
+          "Sidebar: col-span-2 (hidden on mobile)",
+          "Main Content: col-span-10",
+          "Widgets: col-span-12 md:col-span-4 lg:col-span-3",
+          "Data Tables: col-span-12 md:col-span-8 lg:col-span-9"
+        ]
+      },
+      "patient_portal": {
+        "name": "Tetris Grid",
+        "structure": "grid grid-cols-1 md:grid-cols-8 gap-8",
+        "rules": [
+          "Hero/Welcome: col-span-full",
+          "Instructions Card: col-span-full md:col-span-5 row-span-2",
+          "Next Appointment: col-span-full md:col-span-3",
+          "Medication List: col-span-full md:col-span-3"
+        ]
+      }
+    }
+  },
+  "components": {
+    "radius": "rounded-xl",
+    "shadows": {
+      "card": "shadow-[0_2px_8px_rgba(15,23,42,0.04)]",
+      "hover": "shadow-[0_12px_24px_rgba(15,23,42,0.08)]",
+      "dropdown": "shadow-xl border border-slate-100"
+    },
+    "specifics": {
+      "buttons": {
+        "primary": "bg-teal-600 hover:bg-teal-700 text-white shadow-sm transition-all hover:-translate-y-0.5",
+        "secondary": "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:border-slate-300",
+        "ghost": "hover:bg-slate-100 text-slate-600"
+      },
+      "cards": {
+        "base": "bg-white border border-slate-100 p-6 rounded-xl transition-shadow duration-200",
+        "interactive": "hover:shadow-md cursor-pointer hover:border-teal-100"
+      },
+      "inputs": {
+        "base": "h-11 bg-slate-50 border-slate-200 focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all"
+      }
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "header": "bg-white/80 backdrop-blur-md border-b border-slate-200/50",
+      "overlay": "bg-slate-900/20 backdrop-blur-sm"
+    },
+    "textures": {
+      "noise": "Use a subtle SVG noise overlay at 2% opacity on the main background to reduce digital sterility."
+    }
+  },
+  "motion": {
+    "transitions": {
+      "default": "transition-all duration-200 ease-out",
+      "page": "initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}"
+    },
+    "loading": {
+      "ai_generation": "Pulse effect on skeleton loaders with a teal tint."
+    }
+  },
+  "assets": {
+    "images": {
+      "dashboard_hero": {
+        "url": "https://images.unsplash.com/photo-1570105954248-fa0c1376edfe?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3IlMjBicmlnaHR8ZW58MHx8fHdoaXRlfDE3NjY0MjIyMTB8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Modern bright clinic interior",
+        "usage": "Login page background or dashboard welcome banner"
+      },
+      "doctor_interaction": {
+        "url": "https://images.pexels.com/photos/8376277/pexels-photo-8376277.jpeg",
+        "alt": "Doctor consulting patient friendly",
+        "usage": "Patient portal welcome section"
+      },
+      "abstract_bg": {
+        "url": "https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg",
+        "alt": "Abstract medical science background",
+        "usage": "Subtle background for AI generation screens"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px for a refined, elegant look."
+    }
+  },
+  "universal_guidelines": {
+    "anti_patterns": [
+      "NO generic 'Bootstrap' layouts.",
+      "NO full-screen gradients (use them only for accents).",
+      "NO 'Inter' for headings (Use Manrope).",
+      "NO dense walls of text (Use cards, icons, and spacing)."
+    ],
+    "accessibility": {
+      "contrast": "Ensure text is Slate-600 or darker on white backgrounds.",
+      "focus": "Visible teal ring on focus states.",
+      "labels": "All inputs must have visible labels or aria-labels."
+    },
+    "testing": {
+      "attribute": "data-testid",
+      "format": "kebab-case (e.g., 'login-submit-btn')"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Install 'lucide-react', 'framer-motion', 'clsx', 'tailwind-merge' immediately.",
+    "2. Configure Tailwind theme to match the 'colors' and 'typography' sections exactly.",
+    "3. Create a 'Layout' component that handles the Sidebar (Staff) or Top Nav (Patient) logic.",
+    "4. Use 'sonner' for all toast notifications.",
+    "5. For the AI Generation screen, use the 'abstract_bg' image with a glassmorphism overlay.",
+    "6. Ensure the 'Patient Portal' feels significantly simpler and friendlier than the 'Staff Dashboard'."
+  ]
+}
